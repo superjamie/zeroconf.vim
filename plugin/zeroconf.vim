@@ -111,6 +111,10 @@ noremap [q :cprev<cr>
 command Q q
 command W w
 
+" disable command history (q:) and Ex mode (Q)
+nnoremap q: <Nop>
+nnoremap Q <Nop>
+
 """ functions
 " remove trailing whitespace, return to last position
 function! Tw()
