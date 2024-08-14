@@ -181,9 +181,10 @@ map <Leader>= mmgg=G`m
 "" tmux stuff
 " cursor shape
 " https://stackoverflow.com/questions/42377945/vim-adding-cursorshape-support-over-tmux-ssh
-set t_SI=[6\ q
-set t_SR=[4\ q
-set t_EI=[2\ q
+" https://www.reddit.com/r/vim/comments/1er93oq/comment/li19spz/
+let &t_SI = "\e[6 q"
+let &t_SR = "\e[4 q"
+let &t_EI = "\e[2 q"
 " undercurl
 " https://github.com/vim/vim/issues/6174#issuecomment-636869793
 let &t_Cs = "\e[4:3m"
